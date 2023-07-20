@@ -32,8 +32,9 @@ struct WelcomeView: View {
                                 TextField("Name", text: $viewModel.firstName)
                                 TextField("Last Name", text: $viewModel.lastName)
                             }
-                            .textFieldStyle(.roundedBorder)
-                            .border(LinearGradient.gradient(for: colorScheme))
+                            .textFieldViewModifier
+//                            .textFieldStyle(.roundedBorder)
+//                            .border(LinearGradient.gradient(for: colorScheme))
                             .padding()
                         }
                     }
@@ -84,5 +85,6 @@ struct WelcomeView: View {
 struct WelcomeView_Previews: PreviewProvider {
     static var previews: some View {
         WelcomeView(isFirstUsage: .constant(true))
+            .environmentObject(DataController())
     }
 }

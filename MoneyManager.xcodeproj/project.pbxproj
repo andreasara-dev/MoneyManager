@@ -34,6 +34,9 @@
 		7CEC15872A530810002B3D6C /* CardList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEC15862A530810002B3D6C /* CardList.swift */; };
 		7CEC15892A530D6D002B3D6C /* AddTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEC15882A530D6D002B3D6C /* AddTransactionView.swift */; };
 		7CEC158B2A530E60002B3D6C /* AddCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEC158A2A530E60002B3D6C /* AddCardView.swift */; };
+		8B913C9D2A68B918005E5013 /* TextFieldViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B913C9C2A68B918005E5013 /* TextFieldViewModifier.swift */; };
+		8B913C9F2A68BB3A005E5013 /* ButtonViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B913C9E2A68BB3A005E5013 /* ButtonViewModifier.swift */; };
+		8B913CA12A68C603005E5013 /* Extension-View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B913CA02A68C603005E5013 /* Extension-View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +68,9 @@
 		7CEC15862A530810002B3D6C /* CardList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardList.swift; sourceTree = "<group>"; };
 		7CEC15882A530D6D002B3D6C /* AddTransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTransactionView.swift; sourceTree = "<group>"; };
 		7CEC158A2A530E60002B3D6C /* AddCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardView.swift; sourceTree = "<group>"; };
+		8B913C9C2A68B918005E5013 /* TextFieldViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldViewModifier.swift; sourceTree = "<group>"; };
+		8B913C9E2A68BB3A005E5013 /* ButtonViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViewModifier.swift; sourceTree = "<group>"; };
+		8B913CA02A68C603005E5013 /* Extension-View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension-View.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +155,9 @@
 			isa = PBXGroup;
 			children = (
 				7C3B83732A51E129009A92EF /* Extension-LinearGradient.swift */,
+				8B913C9C2A68B918005E5013 /* TextFieldViewModifier.swift */,
+				8B913C9E2A68BB3A005E5013 /* ButtonViewModifier.swift */,
+				8B913CA02A68C603005E5013 /* Extension-View.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -239,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C3B83662A5195CF009A92EF /* WelcomeDesign.swift in Sources */,
+				8B913C9D2A68B918005E5013 /* TextFieldViewModifier.swift in Sources */,
 				7C3ADA762A55A5AC00587EF8 /* DetailView.swift in Sources */,
 				7CEC15832A52B395002B3D6C /* AddCardButton.swift in Sources */,
 				7CEC15892A530D6D002B3D6C /* AddTransactionView.swift in Sources */,
@@ -253,6 +263,8 @@
 				7C328A3E2A5B1C50006A31C4 /* DetailView-ViewModel.swift in Sources */,
 				7CEC15872A530810002B3D6C /* CardList.swift in Sources */,
 				7C3B83772A51E19B009A92EF /* UserData.swift in Sources */,
+				8B913CA12A68C603005E5013 /* Extension-View.swift in Sources */,
+				8B913C9F2A68BB3A005E5013 /* ButtonViewModifier.swift in Sources */,
 				7C328A3A2A5B152B006A31C4 /* WelcomeView-ViewModel.swift in Sources */,
 				7C3B83562A5194F3009A92EF /* MoneyManagerApp.swift in Sources */,
 				7C328A442A5B2436006A31C4 /* AddTransactionView-ViewModel.swift in Sources */,
@@ -391,6 +403,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MoneyManager/Preview Content\"";
+				DEVELOPMENT_TEAM = 5SYZQ266RF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -419,6 +432,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MoneyManager/Preview Content\"";
+				DEVELOPMENT_TEAM = 5SYZQ266RF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
