@@ -13,6 +13,10 @@ extension AddCardView {
         @Published var maskedCardNumber = ""
         @Published var errorMessage = ""
         @Published var balance = ""
+
+        var isDisabled: Bool {
+            cardNumber.isEmpty && balance.isEmpty
+        }
         
         func maskCardNumber(dataController: DataController) {
             if cardNumber.count == 8 {

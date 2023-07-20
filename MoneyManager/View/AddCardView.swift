@@ -10,40 +10,29 @@ import SwiftUI
 struct AddCardView: View {
     @EnvironmentObject var dataController: DataController
     @StateObject private var viewModel = ViewModel()
-    @Environment(\.colorScheme) var colorScheme
     @Environment(\.dismiss) var dismiss
     
     var body: some View {
         NavigationView {
             VStack {
                 SecureField("Enter card number", text: $viewModel.cardNumber)
-                    .foregroundColor(colorScheme == .light ? .black : .white)
                     .keyboardType(.numberPad)
-                    .padding()
-                    .border(LinearGradient.gradient(for: colorScheme))
-                
+                    .textFieldViewModifier
+
                 TextField("Enter balance", text: $viewModel.balance)
-                    .foregroundColor(colorScheme == .light ? .black : .white)
                     .keyboardType(.decimalPad)
-                    .padding()
-                    .border(LinearGradient.gradient(for: colorScheme))
-                    .padding(.bottom)
-                
+                    .textFieldViewModifier
+
                 Button {
                     viewModel.maskCardNumber(dataController: dataController)
                     dismiss()
                 } label: {
                     Text("Submit")
-                        .padding()
-                        .padding([.leading, .trailing])
-                        .foregroundColor(colorScheme == .light ? .black : .white)
-                        .overlay {
-                            RoundedRectangle(cornerRadius: 10)
-                                .stroke(LinearGradient.gradient(for: colorScheme), lineWidth: 2)
-                        }
+                        .buttonViewModifier
                 }
-                .accessibilityLabel("Press this button for insert you card informations")
-                .accessibilityHint("Added!")
+                .disabled(viewModel.isDisabled)
+                .padding(.top)
+                .accessibilityHint("this will add the new card")
                 if !viewModel.errorMessage.isEmpty {
                     Text(viewModel.errorMessage)
                         .foregroundColor(.red)
@@ -55,10 +44,10 @@ struct AddCardView: View {
                 Button {
                     dismiss()
                 } label: {
-                    Image(systemName: "x.circle")
-                        .foregroundColor(.red)
+                    Label("Close", systemImage: "xmark.circle")
+                        .symbolRenderingMode(.multicolor)
                 }
-                .accessibilityLabel("Return to previous screen")
+
             }
             .navigationTitle("Add Card")
             .navigationBarTitleDisplayMode(.inline)

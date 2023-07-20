@@ -16,4 +16,8 @@ extension LinearGradient {
         }
         return LinearGradient(colors: [.pink, .purple, .black], startPoint: .bottomTrailing, endPoint: .topLeading)
     }
+
+    static var borderGradient: LinearGradient {
+        LinearGradient(colors: [.pink, .purple, .primary], startPoint: .bottomTrailing, endPoint: .topLeading)
+    }
 }
