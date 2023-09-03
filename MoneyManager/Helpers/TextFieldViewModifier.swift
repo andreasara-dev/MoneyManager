@@ -7,16 +7,13 @@
 
 import SwiftUI
 
-    struct TextFieldViewModifier: ViewModifier {
-        func body(content: Content) -> some View {
-            content
-                .textFieldStyle(.roundedBorder)
-                .overlay {
-                    RoundedRectangle(cornerRadius: 5)
-                        .stroke(LinearGradient.borderGradient, lineWidth: 1)
-                }
-        }
+struct TextFieldViewModifier: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .textFieldStyle(.roundedBorder)
+            .overlay {
+                RoundedRectangle(cornerRadius: 5)
+                    .stroke(LinearGradient.borderGradient, lineWidth: 1)
+            }
     }
-
-
-
+}

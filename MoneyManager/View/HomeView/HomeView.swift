@@ -17,10 +17,22 @@ struct HomeView: View {
         NavigationStack {
             CardList(permanentCancellation: $permanentCancellation)
                 .navigationTitle("Money")
+                .sheet(isPresented: $viewModel.addCard) {
+                    AddCardView()
+                }
                 .toolbar {
                     ToolbarItem(placement: .navigationBarLeading) {
                         Text(viewModel.todayDateFormatter.string(from: viewModel.date))
                             .bold()
+                    }
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        Button {
+                            viewModel.addCard = true 
+                        } label: {
+                            Image(systemName: "creditcard")
+                                .foregroundColor(colorScheme == .light ? .pink : .purple)
+                        }
+
                     }
                     ToolbarItem(placement: .navigationBarTrailing) {
                         NavigationLink {

@@ -25,7 +25,9 @@ struct AddCardView: View {
 
                 Button {
                     viewModel.maskCardNumber(dataController: dataController)
-                    dismiss()
+                    if viewModel.errorMessage.isEmpty {
+                        dismiss()
+                    }
                 } label: {
                     Text("Submit")
                         .buttonViewModifier

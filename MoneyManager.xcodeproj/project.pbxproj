@@ -106,7 +106,7 @@
 				7C3B83552A5194F3009A92EF /* MoneyManagerApp.swift */,
 				7C3B836E2A51E08E009A92EF /* Model */,
 				7C3B836B2A51DFE7009A92EF /* View */,
-				7C3B837A2A51E1C0009A92EF /* View-Model */,
+				7CD4612E2AA1084D009FF08E /* DataController */,
 				7C3B83752A51E131009A92EF /* Helpers */,
 				7C3B83592A5194F5009A92EF /* Assets.xcassets */,
 				7C3B835B2A5194F5009A92EF /* Preview Content */,
@@ -126,16 +126,14 @@
 			isa = PBXGroup;
 			children = (
 				7CA37CCB2A59984200C714F7 /* ContentView.swift */,
-				7C3B83632A519542009A92EF /* WelcomeView.swift */,
-				7C3B83652A5195CF009A92EF /* WelcomeDesign.swift */,
-				7C3B83672A51AFCC009A92EF /* HomeView.swift */,
-				7C3B83692A51C43F009A92EF /* ProfileView.swift */,
-				7C3ADA752A55A5AC00587EF8 /* DetailView.swift */,
-				7CEC15862A530810002B3D6C /* CardList.swift */,
-				7CEC15842A52B3E4002B3D6C /* CardView.swift */,
-				7CEC158A2A530E60002B3D6C /* AddCardView.swift */,
+				7CD4612A2AA1079F009FF08E /* WelcomeView */,
+				7CD4612C2AA10807009FF08E /* ProfileView */,
+				7CD4612B2AA107FC009FF08E /* HomeView */,
+				7CD4612D2AA10814009FF08E /* DetailView */,
+				7CD4612F2AA108C0009FF08E /* CardList */,
 				7CEC15822A52B395002B3D6C /* AddCardButton.swift */,
-				7CEC15882A530D6D002B3D6C /* AddTransactionView.swift */,
+				7CD461302AA10A9A009FF08E /* AddCardView */,
+				7CD461312AA10AC0009FF08E /* AddTransactionView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -162,19 +160,77 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
-		7C3B837A2A51E1C0009A92EF /* View-Model */ = {
+		7CD4612A2AA1079F009FF08E /* WelcomeView */ = {
+			isa = PBXGroup;
+			children = (
+				7C3B83632A519542009A92EF /* WelcomeView.swift */,
+				7C328A392A5B152B006A31C4 /* WelcomeView-ViewModel.swift */,
+				7C3B83652A5195CF009A92EF /* WelcomeDesign.swift */,
+			);
+			path = WelcomeView;
+			sourceTree = "<group>";
+		};
+		7CD4612B2AA107FC009FF08E /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				7C3B83672A51AFCC009A92EF /* HomeView.swift */,
+				7C328A3B2A5B162D006A31C4 /* HomeView-ViewModel.swift */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		7CD4612C2AA10807009FF08E /* ProfileView */ = {
+			isa = PBXGroup;
+			children = (
+				7C3B83692A51C43F009A92EF /* ProfileView.swift */,
+				7C328A352A5B08FB006A31C4 /* ProfileView-ViewModel.swift */,
+			);
+			path = ProfileView;
+			sourceTree = "<group>";
+		};
+		7CD4612D2AA10814009FF08E /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+				7C3ADA752A55A5AC00587EF8 /* DetailView.swift */,
+				7C328A3D2A5B1C50006A31C4 /* DetailView-ViewModel.swift */,
+			);
+			path = DetailView;
+			sourceTree = "<group>";
+		};
+		7CD4612E2AA1084D009FF08E /* DataController */ = {
 			isa = PBXGroup;
 			children = (
 				7C3B83782A51E1B9009A92EF /* DataController.swift */,
-				7C328A392A5B152B006A31C4 /* WelcomeView-ViewModel.swift */,
-				7C328A3B2A5B162D006A31C4 /* HomeView-ViewModel.swift */,
-				7C328A352A5B08FB006A31C4 /* ProfileView-ViewModel.swift */,
-				7C328A3D2A5B1C50006A31C4 /* DetailView-ViewModel.swift */,
+			);
+			path = DataController;
+			sourceTree = "<group>";
+		};
+		7CD4612F2AA108C0009FF08E /* CardList */ = {
+			isa = PBXGroup;
+			children = (
+				7CEC15862A530810002B3D6C /* CardList.swift */,
+				7CEC15842A52B3E4002B3D6C /* CardView.swift */,
 				7C328A372A5B0A60006A31C4 /* CardList-ViewModel.swift */,
+			);
+			path = CardList;
+			sourceTree = "<group>";
+		};
+		7CD461302AA10A9A009FF08E /* AddCardView */ = {
+			isa = PBXGroup;
+			children = (
+				7CEC158A2A530E60002B3D6C /* AddCardView.swift */,
 				7C328A412A5B1F93006A31C4 /* AddCardView-ViewModel.swift */,
+			);
+			path = AddCardView;
+			sourceTree = "<group>";
+		};
+		7CD461312AA10AC0009FF08E /* AddTransactionView */ = {
+			isa = PBXGroup;
+			children = (
+				7CEC15882A530D6D002B3D6C /* AddTransactionView.swift */,
 				7C328A432A5B2436006A31C4 /* AddTransactionView-ViewModel.swift */,
 			);
-			path = "View-Model";
+			path = AddTransactionView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -25,7 +25,6 @@ struct CardList: View {
                                 CardView(balance: dataController.userData.cards[index].formattedBalance, cardNumber: dataController.userData.cards[index].maskedCardNumber)
                             }
                         }
-                        AddCardButton(action: { viewModel.addCard = true })
                     }
                     HStack {
                         Text("Transactions")
