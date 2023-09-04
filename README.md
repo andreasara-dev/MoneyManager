@@ -1,7 +1,7 @@
 # MoneyManager
 iOS money manager SwiftUI App
 
-![Esempio](MoneyManager/Example.gif)
+<img src="https://github.com/andreasara-dev/MoneyManager/blob/main/Demo/Example.gif" width="300" height="700" alt="example">
 
 A simple app for saving your revenues and expenses with a captivating graphic!
 
