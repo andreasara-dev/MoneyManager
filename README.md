@@ -1,6 +1,8 @@
 # MoneyManager
 iOS money manager SwiftUI App
 
+![Esempio](MoneyManager/Example.gif)
+
 A simple app for saving your revenues and expenses with a captivating graphic!
 
 The accounts are divided in cards that show the balance and the relative transactions.
